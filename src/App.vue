@@ -11,7 +11,8 @@
                                 type="text"
                                 id="email"
                                 class="form-control"
-                                v-model.lazy="userData.email">
+                                :value="userData.email"
+                                @input="userData.email = $event.target.value">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
